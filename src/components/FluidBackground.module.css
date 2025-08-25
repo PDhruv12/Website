@@ -1,0 +1,12 @@
+.fluidCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-color: #000;
+  filter: grayscale(1) sepia(1) hue-rotate(180deg) saturate(6) brightness(0.8);
+  object-fit: cover;
+  pointer-events: none;
+}

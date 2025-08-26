@@ -1,12 +1,19 @@
-import * as React from 'react';
-import FluidBackground from '../components/FluidBackground';
+import React, { Suspense } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import loadable from '@loadable/component';
+
+const FluidBackground = loadable(() => import('../components/FluidBackground'), {
+  fallback: <div>Loading fluid effect...</div>, 
+});
 
 const IndexPage = () => {
   return (
     <main>
-      <FluidBackground />
+      <Suspense fallback={<div>Loading...</div>}>
+        <FluidBackground />
+      </Suspense>
+
       <Hero />
       <About />
     </main>

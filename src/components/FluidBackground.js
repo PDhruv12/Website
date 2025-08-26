@@ -7,7 +7,7 @@ const FluidBackground = () => {
   const overlayRef = useRef(null);
 
   useEffect(() => {
-    if (canvasRef.current && overlayRef.current) {
+    if (typeof window !== "undefined" && canvasRef.current && overlayRef.current) {
       const canvas = canvasRef.current;
       const overlay = overlayRef.current;
       

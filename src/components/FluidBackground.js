@@ -46,41 +46,14 @@ const FluidBackground = () => {
       };
 
       const events = ['mousemove', 'mousedown', 'mouseup', 'mouseenter', 'mouseleave'];
-      const touchEvents = ['touchstart', 'touchmove', 'touchend'];
-
-      const forwardTouchEvent = (originalEvent) => {
-        const touch = originalEvent.touches[0] || originalEvent.changedTouches[0];
-        if (!touch) return;
-        const newEvent = new MouseEvent(
-            originalEvent.type === 'touchstart'
-                ? 'mousedown'
-                : originalEvent.type === 'touchend'
-                ? 'mouseup'
-                : 'mousemove',
-            {
-                clientX: touch.clientX,
-                clientY: touch.clientY,
-                bubbles: true,
-                cancelable: true,
-                buttons: 1,
-            }
-            );
-            canvas.dispatchEvent(newEvent);
-        };
       
       events.forEach(eventType => {
         overlay.addEventListener(eventType, forwardMouseEvent);
-      });
-      touchEvents.forEach(eventType => {
-        overlay.addEventListener(eventType, forwardTouchEvent, { passive: false });
       });
 
       return () => {
         events.forEach(eventType => {
           overlay.removeEventListener(eventType, forwardMouseEvent);
-        });
-        touchEvents.forEach(eventType => {
-          overlay.removeEventListener(eventType, forwardTouchEvent);
         });
       };
     }

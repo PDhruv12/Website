@@ -1,7 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
+import Education from '../components/Education';
 import loadable from '@loadable/component';
+import WorkExperience from '../components/WorkExperience';
 
 const FluidBackground = loadable(() => import('../components/FluidBackground'), {
   fallback: <div>Loading fluid effect...</div>, 
@@ -14,6 +16,8 @@ const IndexPage = () => {
 
       <Hero />
       <About />
+      <Education />
+      <WorkExperience />
     </main>
   );
 };

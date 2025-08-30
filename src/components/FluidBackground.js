@@ -24,15 +24,12 @@ const FluidBackground = () => {
         SPLAT_RADIUS: 0.2,
         SPLAT_FORCE: 6000,
         BLOOM: true,
-        BLOOM_INTENSITY: 0.15,
+        BLOOM_INTENSITY: 0.05,
         BLOOM_THRESHOLD: 0.6,
         SUNRAYS: false,
       });
 
-      // Forward all mouse events from overlay to canvas
-      const forwardMouseEvent = (originalEvent) => {
-        console.log('Forwarding mouse event:', originalEvent.type, originalEvent.clientX, originalEvent.clientY);
-        
+      const handleEvent = (originalEvent) => {
         const newEvent = new MouseEvent(originalEvent.type, {
           clientX: originalEvent.clientX,
           clientY: originalEvent.clientY,
@@ -41,19 +38,26 @@ const FluidBackground = () => {
           buttons: originalEvent.buttons,
           button: originalEvent.button,
         });
-        
         canvas.dispatchEvent(newEvent);
+
+        if (originalEvent.type === 'mousedown') {
+          overlay.style.pointerEvents = 'none';
+          const elementBelow = document.elementFromPoint(originalEvent.clientX, originalEvent.clientY);
+          overlay.style.pointerEvents = 'auto';
+          if (elementBelow) {
+            elementBelow.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }));
+          }
+        }
       };
 
-      const events = ['mousemove', 'mousedown', 'mouseup', 'mouseenter', 'mouseleave'];
-      
+      const events = ['mousemove', 'mousedown', 'mouseup'];      
       events.forEach(eventType => {
-        overlay.addEventListener(eventType, forwardMouseEvent);
+        overlay.addEventListener(eventType, handleEvent);
       });
 
       return () => {
         events.forEach(eventType => {
-          overlay.removeEventListener(eventType, forwardMouseEvent);
+          overlay.removeEventListener(eventType, handleEvent);
         });
       };
     }
@@ -64,7 +68,8 @@ const FluidBackground = () => {
       {/* Actual fluid canvas - behind everything */}
       <canvas 
         ref={canvasRef} 
-        className={styles.fluidCanvas}
+        className={styles.fluidCanvas} 
+        style={{ zIndex: -1, position: 'fixed', top: 0, left: 0 }}
       />
       
       {/* Invisible overlay to capture mouse events */}

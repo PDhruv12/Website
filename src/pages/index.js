@@ -5,9 +5,10 @@ import Education from '../components/Education';
 import loadable from '@loadable/component';
 import WorkExperience from '../components/WorkExperience';
 import Projects from '../components/Projects';
+import LoadingFallback from '../components/Loading';
 
 const FluidBackground = loadable(() => import('../components/FluidBackground'), {
-  fallback: <div>Loading fluid effect...</div>, 
+  fallback: <LoadingFallback />,
 });
 
 const IndexPage = () => {

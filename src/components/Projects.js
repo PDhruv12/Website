@@ -39,7 +39,7 @@ const Projects = () => {
     },
     {
         name: 'PintOS',
-        techStack: 'C, Operating Systems',
+        techStack: 'C',
         duration: 'University Project',
         highlights: [
             'Extended an educational operating system to support advanced OS features.',
@@ -57,7 +57,7 @@ const Projects = () => {
     },
     {
         name: 'WACC Compiler',
-        techStack: 'Scala, Compiler Design, Parsley',
+        techStack: 'Scala',
         duration: 'Individual Project',
         highlights: [
             'Built a full-featured compiler for a statically typed language with cross-compilation to AArch64 and x86.',
@@ -74,7 +74,7 @@ const Projects = () => {
     },
     {
         name: 'ARMv8 Emulator & Assembler',
-        techStack: 'C, Assembly',
+        techStack: 'C',
         duration: 'Group Project',
         highlights: [
             'Designed and implemented an emulator and assembler for a subset of the ARMv8-AArch64 instruction set.',

@@ -7,7 +7,7 @@ const Projects = () => {
     {
         name: 'Knit (Designing for Real People)',
         techStack: 'React Native, Django, PostgreSQL',
-        duration: 'Human-Centered Design Project',
+        duration: 'Human-Centered Design Group Project',
         highlights: [
             'Designed and developed Knit, a mobile app to strengthen real-world community connections.',
             'Emphasized user-centered design through continuous user feedback.',
@@ -40,7 +40,7 @@ const Projects = () => {
     {
         name: 'PintOS',
         techStack: 'C',
-        duration: 'University Project',
+        duration: 'Group Project',
         highlights: [
             'Extended an educational operating system to support advanced OS features.',
             'Implemented priority scheduling with priority donation and a multilevel feedback queue (MLFQ) scheduler.',
@@ -58,7 +58,7 @@ const Projects = () => {
     {
         name: 'WACC Compiler',
         techStack: 'Scala',
-        duration: 'Individual Project',
+        duration: 'Group Project',
         highlights: [
             'Built a full-featured compiler for a statically typed language with cross-compilation to AArch64 and x86.',
             'Implemented optimizations such as constant folding, propagation, and peephole optimization.',

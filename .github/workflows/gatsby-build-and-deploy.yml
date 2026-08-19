@@ -3,34 +3,32 @@ name: Gatsby Build and Deploy
 on:
   push:
     branches:
-      - main  # Change this to your default branch if necessary
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Check out the repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Set up Node.js environment
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '18'
 
-      # Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      # Build the Gatsby site
-      - name: Build Gatsby Site
-        run: npm run build  # This runs `gatsby build`
+      - name: Build Gatsby site
+        run: npm run build
 
-      # Deploy the site (example for GitHub Pages)
+      - name: Check build output
+        run: ls -la public
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GH_TOKEN }}
-          publish_dir: ./public  # Gatsby's output directory
+          publish_dir: ./public

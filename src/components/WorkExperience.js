@@ -7,6 +7,25 @@ const WorkExperience = () => {
     {
       company: 'Arctic Lake Technology',
       role: 'Electronic Trading Developer Intern',
+      duration: '23 March 2026 - 7 August 2026',
+      highlights: [
+        'Automated messaging protocols with Java code generation using compile-time pipelines.',
+        'Modernized core trading infrastructure by replacing legacy bytecode injection.',
+        'Developed a UAT testing suite and deployed services using Kubernetes and Helm.',
+        'Collaborated in an Agile team using Kanban, sprint planning, and issue tracking.'
+      ],
+      details: [
+        "Built a code generation pipeline using <b>JavaPoet</b> and <b>Jackson XML</b> to automate Simple Binary Encoding (SBE) messages, creating a single source of truth and eliminating manual offset errors.",
+        "Replaced an outdated, hard-to-maintain <b>ASM bytecode injector</b> with a custom compile-time annotation processor, making the core trading platform easier to debug and extend.",
+        "Refactored legacy platform architecture using <b>Java generators</b>, <b>Java generics</b> and abstract classes to automatically generate serialization logic and <b>FIXatdl</b> files, significantly reducing boilerplate code.",
+        "Developed a UAT smoke testing suite and a custom shell command to verify live market data connections and exchange message formatting, speeding up local testing without needing full build deployments.",
+        "Gained hands-on deployment experience using  <b>Docker</b>, <b>Kubernetes</b> and <b>Helm</b>, managing containerized applications and working with CI/CD pipelines to push code into production.",
+        "Participated in Agile development workflows, utilizing <b>Kanban</b>, sprint planning, and user stories to manage tasks and take multiple complex projects from initial requirements all the way to production."
+      ]
+    },
+    {
+      company: 'Arctic Lake Technology',
+      role: 'Electronic Trading Developer Intern',
       duration: '30 June 2025 - 25 September 2025',
       highlights: [
         'Developed an AI agent for initial alert diagnosis with multiple tools.',

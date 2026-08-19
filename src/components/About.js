@@ -5,22 +5,20 @@ const About = () => (
     <div style={cardStyle}>
       <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>About Me</h2>
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>
-        Hi! I'm a third year student at <strong>Imperial College London</strong>, currently pursuing a <strong>MEng in Computing (Artificial Intelligence and Machine Learning)</strong>. 
-        I'm passionate about turning complex problems into innovative solutions with cutting-edge technology.
+        Hi! I'm a fourth-year student at <strong>Imperial College London</strong> and an upcoming exchange student at <strong>Massachusetts Institute of Technology (MIT)</strong>. I am currently pursuing a <strong>MEng in Computing (Artificial Intelligence and Machine Learning)</strong>. 
+        I'm passionate about turning complex problems into innovative solutions using cutting-edge technology.
       </p>
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>
-        I have worked on projects ranging from <em>operating systems </em> 
-        and <em>compilers</em> to <em>AI ethics research</em>. I have
-        hands-on experience with tools like Kubernetes, Docker, and cloud deployment workflows. 
-        I enjoy tackling complex technical challenges, whether through full-stack development,
-        cloud deployment, or algorithm design. 
+        I have worked on projects ranging from <em>operating systems </em>  
+        and <em>compilers</em> to <em>advanced NLP models</em> and <em>robotics</em>. I have
+        hands-on experience building code generation pipelines for low-latency systems, as well as managing cloud deployment workflows with tools like Kubernetes, Docker, and Helm. 
+        I enjoy tackling complex technical challenges, through optimizing backend architecture, full stack development, infrastructure deployment, or algorithm design. 
       </p>
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>
-        Along the way, I've been honored with the <strong>Dean's List</strong> in both years of study 
-        and received the <strong>G-Research Award</strong> this year. I've developed impactful projects, 
-        including an AI agent for debugging and a community-focused app.
+        Along the way, I've been honored with the <strong>Dean's List</strong> in all three years of my study 
+        and received the <strong>G-Research Award</strong>. I've developed impactful projects, 
+        including an AI agent for alert diagnosis, automated infrastructure for a proprietary trading platform, and a community-focused app.
       </p>
-
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>
         Outside of coding, I enjoy playing chess, taking on leadership roles in student societies, 
         and exploring new ways to solve problems. I'm always excited to learn, experiment, and push 

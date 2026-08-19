@@ -5,6 +5,37 @@ const Projects = () => {
 
   const projects = [
     {
+        name: 'Patronizing and Condescending Language (PCL) Detection',
+        techStack: 'Python, Optuna, BeautifulSoup',
+        duration: 'Natural Language Processing Coursework',
+        highlights: [
+            'Engineered a weighted RoBERTa-DeBERTa ensemble for PCL detection.',
+            'Mitigated severe class imbalance using multilingual back-translation.',
+            'Improved the positive-class F1 score from 0.48 to 0.6237.'
+        ],
+        details: [
+            "Proposed and implemented a novel approach for detecting PCL by fine-tuning a weighted ensemble of <b>RoBERTa-large</b> and <b>DeBERTa-v3-base</b> models.",
+            "Mitigated severe class imbalance by upsampling the dataset through multi-lingual back-translation and stripping residual HTML noise using <b>BeautifulSoup</b>.",
+            "Implemented 5-fold cross-validation and automated Bayesian hyperparameter tuning via <b>Optuna</b>.",
+            "Successfully outperformed the baseline by increasing the positive class F1 score from 0.48 to 0.6237 and improving average precision from 0.528 to 0.648."
+        ]
+    },
+    {
+        name: 'Autonomous Navigational Robot',
+        techStack: 'Raspberry Pi, BrickPi, Python',
+        duration: 'Robotics Group Project',
+        highlights: [
+            'Built a Raspberry Pi-based robot capable of autonomous navigation.',
+            'Implemented Monte Carlo Localization and camera-based vision.',
+            'Successfully navigated a complex course while actively avoiding obstacles.'
+        ],
+        details: [
+            "Developed and integrated <b>Monte Carlo Localization</b> algorithms to accurately track the robot's position within a given environment.",
+            "Implemented <b>camera-based vision</b> system to detect obstacles in real-time.",
+            "Programmed autonomous decision-making to navigate a physical course and dynamically avoid obstacles."
+        ]
+    },
+    {
         name: 'Knit (Designing for Real People)',
         techStack: 'React Native, Django, PostgreSQL',
         duration: 'Human-Centered Design Group Project',
@@ -70,6 +101,22 @@ const Projects = () => {
             "Implemented an <b>interpreter</b> and <b>interactive REPL</b> for easier testing and debugging.",
             "Optimized performance through <b>constant propagation</b>, <b>constant folding</b>, <b>peephole optimizations</b>, and <b>data flow analysis</b>.",
             "Enabled <b>function overloading</b> and improved <b>error handling</b> for better language usability and debugging."
+        ]
+    },
+    {
+        name: 'Sentinel (AI Resilience Engine)',
+        techStack: 'Python, JavaScript, LangChain',
+        duration: 'IC Hack 26',
+        highlights: [
+            'Built an AI-driven supply chain optimization tool for real-time disruption management.',
+            'Engineered a data pipeline to sanitize and process fragmented data.',
+            'Enabled early visualization of potential supply chain bottlenecks.'
+        ],
+        details: [
+            "Developed an <b>AI Resilience Engine</b> designed to optimize supply chain workflows and manage disruptions in real time.",
+            "Engineered robust <b>data pipelines</b> to clean and sanitize heavily fragmented datasets.",
+            "Fed refined datasets into a LLM powered risk engine to predict and evaluate potential logistical failures.",
+            "Created a visualization layer that provided early warnings for potential supply chain bottlenecks."
         ]
     },
     {

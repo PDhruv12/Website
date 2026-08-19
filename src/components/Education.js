@@ -31,6 +31,7 @@ const Education = () => {
           <ul style={listStyle}>
             <li>Year 1: 87.38% — Dean’s List</li>
             <li>Year 2: 87.96% — Dean’s List, G-Research Award</li>
+            <li>Year 3: 87.95% — Dean’s List</li>
           </ul>
           <p style={{ fontSize: '0.9rem', marginTop: '1rem', opacity: 0.8 }}>
             {showImperialDetails ? 'Click to hide details ↑' : 'Click to view full details ↓'}
@@ -42,6 +43,8 @@ const Education = () => {
               <p>Databases, Computer Systems, Computer Architecture, Haskell, Kotlin, Graphs and Algorithms, Linear Algebra, Calculus, Discrete Mathematics</p>
               <p style={{ margin: '1rem 0 0.5rem' }}><strong>Modules (Year 2):</strong></p>
               <p>Networks and Communication, Operating Systems, Software Engineering Design, Algorithm Design and Analysis, Models of Computation, Compilers, Computational Techniques, Probability and Statistics</p>
+              <p style={{ margin: '1rem 0 0.5rem' }}><strong>Modules (Year 3):</strong></p>
+              <p>Introduction to Machine Learning, Mathematics for Machine Learning, Advanced Computer Architecture, The Theory and Practice of Concurrent Programming, Deep Learning, Natural Language Processing, Computer Vision, Robotics, Finance and Financial Management</p>
             </div>
           )}
         </div>

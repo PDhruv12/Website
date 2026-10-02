@@ -5,7 +5,7 @@ const About = () => (
     <div style={cardStyle}>
       <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>About Me</h2>
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>
-        Hi! I'm a fourth-year student at <strong>Imperial College London</strong> and an upcoming exchange student at <strong>Massachusetts Institute of Technology (MIT)</strong>. I am currently pursuing a <strong>MEng in Computing (Artificial Intelligence and Machine Learning)</strong>. 
+        Hi! I'm a fourth-year student at <strong>Imperial College London</strong> and an upcoming exchange student at <strong>Massachusetts Institute of Technology (MIT)</strong>. I am currently pursuing a <strong>MEng in Computing (International Programme of Study)</strong>. 
         I'm passionate about turning complex problems into innovative solutions using cutting-edge technology.
       </p>
       <p style={{ lineHeight: '1.6', fontSize: '1.05rem' }}>

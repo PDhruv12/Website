@@ -23,7 +23,7 @@ const Education = () => {
         >
           <h2 style={{ marginBottom: '0.3rem' }}>Imperial College London</h2>
           <p style={{ fontSize: '1.05rem', marginBottom: '0.3rem' }}>
-            <strong>MEng Computing (AI & Machine Learning)</strong>
+            <strong>MEng Computing (International Programme of Study)</strong>
           </p>
           <p style={{ fontSize: '0.95rem', opacity: 0.85, marginBottom: '0.8rem' }}>
             2023 – 2027
